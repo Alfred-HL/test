@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi IoT 控制中心</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Raspberry Pi IoT 控制中心</h1>
+    </header>
+    <main class="dashboard">
+        <div class="card">
+            <h2>溫度監測</h2>
+            <p class="sensor-data" id="temperature">-- °C</p>
+        </div>
+        <div class="card">
+            <h2>濕度監測</h2>
+            <p class="sensor-data" id="humidity">-- %</p>
+        </div>
+        <div class="card" id="light-card">
+            <h2>燈光控制</h2>
+            <button id="light-toggle">開啟</button>
+            <p>狀態: <span id="light-status">關閉</span></p>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

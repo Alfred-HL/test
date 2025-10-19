@@ -1,6 +1,9 @@
-##Project description
-This is a python flask project.
+## 虛擬環境
+- 使用uv建立的虛擬環境
+- 所有python套件安裝請使用`uv add 套件名稱`
 
-##Virtual environment
-use uv to set up the virtual environment
-All python kits should be installed with 'uv add "python kit name"'
+## 工作目錄描述
+- test是上課用的主目錄
+
+## 目前次專案的工作目錄
+- test/pjt_1
